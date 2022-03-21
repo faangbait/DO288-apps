@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  APP_MSG: Elvis lives
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2022-03-21T20:42:34Z"
+  name: elvis
+  namespace: ggosla-design-container
+  resourceVersion: "33724628"
+  selfLink: /api/v1/namespaces/ggosla-design-container/configmaps/elvis
+  uid: 0b6652de-39ae-49da-9d78-4fa42f5c89a5
