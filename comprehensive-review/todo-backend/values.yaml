@@ -38,7 +38,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 80
+  port: 3000
 
 ingress:
   enabled: false
@@ -80,6 +80,16 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+mariadb:
+  auth:
+    username: root
+    password: secrett-pass
+    database: todo
+  primary:
+    podSecurityContext:
+      enabled: false
+    containerSecurityContext:
+      enabled: false
 env:
   - name: "DATABASE_USER"
     value: "root"
@@ -88,4 +98,4 @@ env:
   - name: "DATABASE_NAME"
     value: "todo"
   - name: "DATABASE_SVC"
-    value: "todo-backend-mariadb"
+    value: "todo-list-mariadb"

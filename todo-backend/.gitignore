@@ -1,2 +1,5 @@
 node_modules
 dist
+
+/var/storage/stonedoorgroup/DO288-apps/todo-backend/.odo/env
+.odo/odo-file-index.json
